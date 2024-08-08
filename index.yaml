@@ -74,6 +74,16 @@ entries:
   productinventory:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2024-08-08T08:04:32.581828362Z"
+    description: A reference example TMFC005-ProductInventoryManagement ODA Component
+    digest: 790288050185a831a8ca11aa6a65d41278d31738f1306cbb3899e503100300a5
+    name: productinventory
+    type: application
+    urls:
+    - https://github.com/RJ-acc/RJ-reference-example-components/releases/download/productinventory-1.1.1/productinventory-1.1.1.tgz
+    version: 1.1.1
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2024-06-13T15:56:10.804550027Z"
     description: A reference example TMFC005-ProductInventoryManagement ODA Component
     digest: 9597ded40666d98db7bc26ca07fff4b4224e98ffa215c5325d87a6b00ceb4982
@@ -112,4 +122,4 @@ entries:
     urls:
     - https://github.com/tmforum-oda/reference-example-components/releases/download/productinventory-0.1.4/productinventory-0.1.4.tgz
     version: 0.1.4
-generated: "2024-08-01T10:23:04.658979651Z"
+generated: "2024-08-08T08:04:32.581860943Z"
