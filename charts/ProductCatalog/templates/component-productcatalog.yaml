@@ -25,33 +25,12 @@ spec:
       specification: ["https://raw.githubusercontent.com/tmforum-apis/TMF620_ProductCatalog/master/TMF620-ProductCatalog-v4.0.0.swagger.json"]
       implementation: {{.Release.Name}}-prodcatapi
       apiType: openapi
-      apiKeyVerification:
-        enabled: true
-        location: "header"
-      rateLimit:
-        enabled: false
-        identifier: "IP"
-        limit: "6"
-        interval: "pm"
-      quota:
-        identifier: ""
-        limit: ""
-      OASValidation:
-        requestEnabled: false
-        responseEnabled: false
-        allowUnspecifiedHeaders: false
-        allowUnspecifiedQueryParams: false
-        allowUnspecifiedCookies: false
-      CORS:
-        enabled: false
-        allowCredentials: false
-        allowOrigins: "https://allowed-origin.com, https://allowed-origin2.com"
-        handlePreflightRequests:
-          enabled: false
-          allowHeaders: "Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers"
-          allowMethods: "GET, POST"
-          maxAge: 36000
-      template: ""
+      apiKeyVerification: {{.Values.component.api.apiKeyVerification | toYaml | nindent 6}}
+      rateLimit: {{.Values.component.api.rateLimit | toYaml | nindent 6}}
+      quota: {{.Values.component.api.quota | toYaml | nindent 6}}
+      OASValidation: {{.Values.component.api.OASValidation | toYaml | nindent 6}}
+      CORS: {{.Values.component.api.CORS | toYaml | nindent 6}}
+      template: "{{.Values.component.api.template}}"
       path: /{{.Release.Name}}-{{.Values.component.name}}/tmf-api/productCatalogManagement/v4
       developerUI: /{{.Release.Name}}-{{.Values.component.name}}/tmf-api/productCatalogManagement/v4/docs
       port: 8080
@@ -73,33 +52,12 @@ spec:
     exposedAPIs: 
     - name: metrics
       apiType: prometheus
-      apiKeyVerification:
-        enabled: true
-        location: "header"
-      rateLimit:
-        enabled: false
-        identifier: "IP"
-        limit: "6"
-        interval: "pm"
-      quota:
-        identifier: ""
-        limit: ""
-      OASValidation:
-        requestEnabled: false
-        responseEnabled: false
-        allowUnspecifiedHeaders: false
-        allowUnspecifiedQueryParams: false
-        allowUnspecifiedCookies: false
-      CORS:
-        enabled: false
-        allowCredentials: false
-        allowOrigins: "https://allowed-origin.com, https://allowed-origin2.com"
-        handlePreflightRequests:
-          enabled: false
-          allowHeaders: "Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers"
-          allowMethods: "GET, POST"
-          maxAge: 36000
-      template: ""
+      apiKeyVerification: {{.Values.component.api.apiKeyVerification | toYaml | nindent 6}}
+      rateLimit: {{.Values.component.api.rateLimit | toYaml | nindent 6}}
+      quota: {{.Values.component.api.quota | toYaml | nindent 6}}
+      OASValidation: {{.Values.component.api.OASValidation | toYaml | nindent 6}}
+      CORS: {{.Values.component.api.CORS | toYaml | nindent 6}}
+      template: "{{.Values.component.api.template}}"
       implementation: {{.Release.Name}}-{{.Values.component.name}}-sm
       path: /{{.Release.Name}}-{{.Values.component.name}}/metrics
       port: 4000    
