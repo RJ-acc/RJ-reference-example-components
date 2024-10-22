@@ -3,6 +3,16 @@ entries:
   productcatalog:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2024-10-22T09:19:43.88059991Z"
+    description: A reference example TMFC001-ProductCatalogManagement ODA Component
+    digest: eff06ba0eca7493d4f5a2b4dd2798db813c4d7f00ee7ba676e09c8e5b7771c69
+    name: productcatalog
+    type: application
+    urls:
+    - https://github.com/RJ-acc/RJ-reference-example-components/releases/download/productcatalog-55.2.4/productcatalog-55.2.4.tgz
+    version: 55.2.4
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2024-10-22T09:12:09.638348513Z"
     description: A reference example TMFC001-ProductCatalogManagement ODA Component
     digest: 9ea1ce687ecd5ade3cf00704b59160cd1395e71aa39b75a1d3f7143c7a132aab
@@ -182,4 +192,4 @@ entries:
     urls:
     - https://github.com/tmforum-oda/reference-example-components/releases/download/productinventory-0.1.4/productinventory-0.1.4.tgz
     version: 0.1.4
-generated: "2024-10-22T09:12:09.638410759Z"
+generated: "2024-10-22T09:19:43.880760881Z"
