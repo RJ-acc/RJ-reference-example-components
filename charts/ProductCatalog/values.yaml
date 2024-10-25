@@ -11,7 +11,7 @@ component:
   publicationDate: 2023-08-18T00:00:00.000Z
   version: "0.0.1"
   storageClassName: default
-  api:
+  apipolicy:
     apiKeyVerification:
       enabled: true
       location: "header"
