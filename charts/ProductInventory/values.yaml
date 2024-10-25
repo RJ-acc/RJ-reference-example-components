@@ -25,7 +25,7 @@ component:
   storageClassName: default
   apipolicy:
     apiKeyVerification:
-      enabled: true
+      enabled: false
       location: "header"
     rateLimit:
       enabled: false
